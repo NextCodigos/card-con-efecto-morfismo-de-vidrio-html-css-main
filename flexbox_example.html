@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  height: 100%; /* Cambiamos la altura al 100% para que se ajuste automáticamente al contenido */
+  border: 1px solid black;
+}
+
+.flex-item {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black; /* Agregamos un borde a las cajas */
+}
+
+.header {
+  background-color: lightblue;
+  height: 10%;
+}
+
+.aside {
+  background-color: lightgreen;
+  flex-grow: 1;
+}
+
+.main {
+  background-color: lightyellow;
+  flex-grow: 3;
+}
+
+.nav {
+  background-color: lightpink;
+  height: 10%;
+}
+
+.footer {
+  background-color: lightsalmon;
+  height: 10%;
+}
+</style>
+</head>
+<body>
+<div class="flex-container">
+  <div class="flex-item">
+    <div class="header">Header 1</div>
+    <div class="aside">Aside 1</div>
+    <div class="main">Main 1</div>
+    <div class="nav">Nav 1</div>
+    <div class="footer">Footer 1</div>
+  </div>
+  <div class="flex-item">
+    <div class="header">Header 2</div>
+    <div class="aside">Aside 2</div>
+    <div class="main">Main 2</div>
+    <div class="nav">Nav 2</div>
+    <div class="footer">Footer 2</div>
+  </div>
+  <div class="flex-item">
+    <div class="header">Header 3</div>
+    <div class="aside">Aside 3</div>
+    <div class="main">Main 3</div>
+    <div class="nav">Nav 3</div>
+    <div class="footer">Footer 3</div>
+  </div>
+  <div class="flex-item">
+    <div class="header">Header 4</div>
+    <div class="aside">Aside 4</div>
+    <div class="main">Main 4</div>
+    <div class="nav">Nav 4</div>
+    <div class="footer">Footer 4</div>
+  </div>
+  <div class="flex-item">
+    <div class="header">Header 5</div>
+    <div class="aside">Aside 5</div>
+    <div class="main">Main 5</div>
+    <div class="nav">Nav 5</div>
+    <div class="footer">Footer 5</div>
+  </div>
+</div>
+</body>
+</html>
